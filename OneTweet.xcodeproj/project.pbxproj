@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7848A7029453102007BAEDF /* TimelineRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7848A6F29453102007BAEDF /* TimelineRepository.swift */; };
+		C7848A7329453602007BAEDF /* MockTimelineRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7848A7229453601007BAEDF /* MockTimelineRepository.swift */; };
+		C7848A7529453881007BAEDF /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7848A7429453881007BAEDF /* MockAPIClient.swift */; };
+		C7848A78294539C8007BAEDF /* TimelineRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7848A76294539C3007BAEDF /* TimelineRepositoryTests.swift */; };
 		C7A093FF2943BA2E00E78DC6 /* OneTweetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A093FE2943BA2E00E78DC6 /* OneTweetApp.swift */; };
 		C7A094012943BA2E00E78DC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A094002943BA2E00E78DC6 /* ContentView.swift */; };
 		C7A094032943BA3000E78DC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7A094022943BA3000E78DC6 /* Assets.xcassets */; };
@@ -39,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C7848A6F29453102007BAEDF /* TimelineRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineRepository.swift; sourceTree = "<group>"; };
+		C7848A7229453601007BAEDF /* MockTimelineRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTimelineRepository.swift; sourceTree = "<group>"; };
+		C7848A7429453881007BAEDF /* MockAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
+		C7848A76294539C3007BAEDF /* TimelineRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineRepositoryTests.swift; sourceTree = "<group>"; };
 		C7A093FB2943BA2E00E78DC6 /* OneTweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneTweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A093FE2943BA2E00E78DC6 /* OneTweetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTweetApp.swift; sourceTree = "<group>"; };
 		C7A094002943BA2E00E78DC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C7848A71294535F2007BAEDF /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C7848A7229453601007BAEDF /* MockTimelineRepository.swift */,
+				C7848A76294539C3007BAEDF /* TimelineRepositoryTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		C7A093F22943BA2E00E78DC6 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +166,8 @@
 		C7A0940F2943BA5D00E78DC6 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				C7848A71294535F2007BAEDF /* Tests */,
+				C7848A6F29453102007BAEDF /* TimelineRepository.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -213,6 +232,7 @@
 			children = (
 				C7A0942C2943CF4600E78DC6 /* DateFormatterTests.swift */,
 				C7A094372943D72400E78DC6 /* TimelineRequestTests.swift */,
+				C7848A7429453881007BAEDF /* MockAPIClient.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -335,6 +355,7 @@
 				C7A094012943BA2E00E78DC6 /* ContentView.swift in Sources */,
 				C7A093FF2943BA2E00E78DC6 /* OneTweetApp.swift in Sources */,
 				C7A094412943E02800E78DC6 /* Domain+Ext.swift in Sources */,
+				C7848A7029453102007BAEDF /* TimelineRepository.swift in Sources */,
 				C7A094172943BC3500E78DC6 /* Tweet.swift in Sources */,
 				C7A094192943C9EE00E78DC6 /* DataRequest.swift in Sources */,
 				C7A0941F2943CCF400E78DC6 /* JsonDecoder.swift in Sources */,
@@ -347,8 +368,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7848A78294539C8007BAEDF /* TimelineRepositoryTests.swift in Sources */,
 				C7A0942D2943CF4600E78DC6 /* DateFormatterTests.swift in Sources */,
+				C7848A7529453881007BAEDF /* MockAPIClient.swift in Sources */,
 				C7A094392943D82C00E78DC6 /* TimelineRequestTests.swift in Sources */,
+				C7848A7329453602007BAEDF /* MockTimelineRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,7 +1,7 @@
 import Foundation
 
 extension APIClient {
-    struct Timeline: Decodable {
+    public struct Timeline: Decodable {
         let tweets: [Tweet]
     }
 }

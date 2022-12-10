@@ -1,7 +1,7 @@
 import Foundation
 
 extension APIClient {
-    struct Tweet: Decodable {
+    public struct Tweet: Decodable {
         let id: String
         let replyId: String?
         let author: String

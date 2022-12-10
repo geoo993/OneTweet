@@ -1,5 +1,11 @@
 import Foundation
 
+extension Timeline {
+    init(model: APIClient.Timeline) {
+        self.init(tweets: model.tweets.map(Tweet.init))
+    }
+}
+
 extension Tweet {
     init(model: APIClient.Tweet) {
         self.init(
