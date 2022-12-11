@@ -24,7 +24,7 @@ final class TimelineRepositoryTests: XCTestCase {
             return .success(
                 APIClient.Timeline(
                     tweets: [
-                        .init(id: "sjjs", replyId: nil, author: "", content: "", avatar: nil, date: .init())
+                        .init(id: "sjjs", replyId: nil, name: "", author: "", content: "", avatar: nil, date: .init())
                     ]
                 )
             )

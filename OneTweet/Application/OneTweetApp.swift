@@ -4,7 +4,7 @@ import SwiftUI
 struct OneTweetApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TimelineView(viewModel: .init())
         }
     }
 }

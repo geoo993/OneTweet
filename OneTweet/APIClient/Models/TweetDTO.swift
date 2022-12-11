@@ -4,6 +4,7 @@ extension APIClient {
     public struct Tweet: Decodable {
         let id: String
         let replyId: String?
+        let name: String
         let author: String
         let content: String
         let avatar: String?
@@ -13,7 +14,7 @@ extension APIClient {
 
 extension APIClient.Tweet {
     enum CodingKeys: String, CodingKey {
-        case id, author, content, avatar, date
+        case id, name, author, content, avatar, date
         case replyId = "inReplyTo"
     }
 }

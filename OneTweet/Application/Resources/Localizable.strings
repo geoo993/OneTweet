@@ -1,0 +1,7 @@
+"tweet_details__screen_title" = "Tweet";
+"tweet__retweets" = "Retweets";
+"tweet__replyingTo" = "Replying to ";
+
+"error_alert_title" = "Oops 😅";
+"error_alert_message" = "Something went wrong.\nPlease try again later!";
+"error_alert_cta" = "Got it!";

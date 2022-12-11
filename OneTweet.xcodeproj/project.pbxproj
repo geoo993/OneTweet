@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C774E6922945EB2400DD25F3 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C774E6902945EB2400DD25F3 /* AvatarView.swift */; };
+		C774E6932945EB2400DD25F3 /* Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C774E6912945EB2400DD25F3 /* Unwrap.swift */; };
+		C774E6962945ECC200DD25F3 /* TimelineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C774E6952945ECC200DD25F3 /* TimelineViewModel.swift */; };
+		C774E6982945ED7400DD25F3 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C774E6972945ED7400DD25F3 /* FeedView.swift */; };
+		C774E69B2946068200DD25F3 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C774E69A2946068200DD25F3 /* Assets.swift */; };
+		C774E69D2946299500DD25F3 /* Domain+Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = C774E69C2946299500DD25F3 /* Domain+Fixtures.swift */; };
+		C774E69F29462F3800DD25F3 /* TweetButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C774E69E29462F3800DD25F3 /* TweetButtons.swift */; };
+		C774E6A129462F5B00DD25F3 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = C774E6A029462F5B00DD25F3 /* Button.swift */; };
 		C7848A7029453102007BAEDF /* TimelineRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7848A6F29453102007BAEDF /* TimelineRepository.swift */; };
 		C7848A7329453602007BAEDF /* MockTimelineRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7848A7229453601007BAEDF /* MockTimelineRepository.swift */; };
 		C7848A7529453881007BAEDF /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7848A7429453881007BAEDF /* MockAPIClient.swift */; };
 		C7848A78294539C8007BAEDF /* TimelineRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7848A76294539C3007BAEDF /* TimelineRepositoryTests.swift */; };
 		C7A093FF2943BA2E00E78DC6 /* OneTweetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A093FE2943BA2E00E78DC6 /* OneTweetApp.swift */; };
-		C7A094012943BA2E00E78DC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A094002943BA2E00E78DC6 /* ContentView.swift */; };
+		C7A094012943BA2E00E78DC6 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A094002943BA2E00E78DC6 /* TimelineView.swift */; };
 		C7A094032943BA3000E78DC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7A094022943BA3000E78DC6 /* Assets.xcassets */; };
 		C7A094062943BA3000E78DC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7A094052943BA3000E78DC6 /* Preview Assets.xcassets */; };
 		C7A094152943BB3F00E78DC6 /* TweetDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A094142943BB3F00E78DC6 /* TweetDTO.swift */; };
@@ -30,6 +38,9 @@
 		C7A0943C2943DA7300E78DC6 /* Timeline.json in Resources */ = {isa = PBXBuildFile; fileRef = C7A094232943CEF300E78DC6 /* Timeline.json */; };
 		C7A0943F2943E00B00E78DC6 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A0943E2943E00B00E78DC6 /* Timeline.swift */; };
 		C7A094412943E02800E78DC6 /* Domain+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A094402943E02800E78DC6 /* Domain+Ext.swift */; };
+		C7ACA41B29464B2E002E0C7D /* TweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ACA41A29464B2E002E0C7D /* TweetView.swift */; };
+		C7ACA41D294665D4002E0C7D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7ACA41C294665D4002E0C7D /* Localizable.strings */; };
+		C7ACA42129466CFB002E0C7D /* TimelineViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ACA41F29466CEF002E0C7D /* TimelineViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,13 +54,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C774E6902945EB2400DD25F3 /* AvatarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		C774E6912945EB2400DD25F3 /* Unwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unwrap.swift; sourceTree = "<group>"; };
+		C774E6952945ECC200DD25F3 /* TimelineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewModel.swift; sourceTree = "<group>"; };
+		C774E6972945ED7400DD25F3 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		C774E69A2946068200DD25F3 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		C774E69C2946299500DD25F3 /* Domain+Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Domain+Fixtures.swift"; sourceTree = "<group>"; };
+		C774E69E29462F3800DD25F3 /* TweetButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetButtons.swift; sourceTree = "<group>"; };
+		C774E6A029462F5B00DD25F3 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		C7848A6F29453102007BAEDF /* TimelineRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineRepository.swift; sourceTree = "<group>"; };
 		C7848A7229453601007BAEDF /* MockTimelineRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTimelineRepository.swift; sourceTree = "<group>"; };
 		C7848A7429453881007BAEDF /* MockAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
 		C7848A76294539C3007BAEDF /* TimelineRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineRepositoryTests.swift; sourceTree = "<group>"; };
 		C7A093FB2943BA2E00E78DC6 /* OneTweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneTweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7A093FE2943BA2E00E78DC6 /* OneTweetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTweetApp.swift; sourceTree = "<group>"; };
-		C7A094002943BA2E00E78DC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C7A094002943BA2E00E78DC6 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
 		C7A094022943BA3000E78DC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7A094052943BA3000E78DC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C7A094142943BB3F00E78DC6 /* TweetDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetDTO.swift; sourceTree = "<group>"; };
@@ -67,6 +86,9 @@
 		C7A0943A2943D8C200E78DC6 /* TimelineDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineDTO.swift; sourceTree = "<group>"; };
 		C7A0943E2943E00B00E78DC6 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 		C7A094402943E02800E78DC6 /* Domain+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Domain+Ext.swift"; sourceTree = "<group>"; };
+		C7ACA41A29464B2E002E0C7D /* TweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetView.swift; sourceTree = "<group>"; };
+		C7ACA41C294665D4002E0C7D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		C7ACA41F29466CEF002E0C7D /* TimelineViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +109,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C774E68F2945EAF500DD25F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C774E6902945EB2400DD25F3 /* AvatarView.swift */,
+				C774E6912945EB2400DD25F3 /* Unwrap.swift */,
+				C774E6972945ED7400DD25F3 /* FeedView.swift */,
+				C7ACA41A29464B2E002E0C7D /* TweetView.swift */,
+				C774E69E29462F3800DD25F3 /* TweetButtons.swift */,
+				C774E6A029462F5B00DD25F3 /* Button.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C774E6992946066C00DD25F3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C774E69A2946068200DD25F3 /* Assets.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		C7848A71294535F2007BAEDF /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +218,11 @@
 		C7A094102943BA6700E78DC6 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				C7A094002943BA2E00E78DC6 /* ContentView.swift */,
+				C7ACA41E29466AAB002E0C7D /* Tests */,
+				C774E6992946066C00DD25F3 /* Utilities */,
+				C774E68F2945EAF500DD25F3 /* Views */,
+				C774E6952945ECC200DD25F3 /* TimelineViewModel.swift */,
+				C7A094002943BA2E00E78DC6 /* TimelineView.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -183,6 +230,7 @@
 		C7A094112943BA8500E78DC6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C7ACA41C294665D4002E0C7D /* Localizable.strings */,
 				C7A094022943BA3000E78DC6 /* Assets.xcassets */,
 				C7A094042943BA3000E78DC6 /* Preview Content */,
 			);
@@ -202,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				C7A094402943E02800E78DC6 /* Domain+Ext.swift */,
+				C774E69C2946299500DD25F3 /* Domain+Fixtures.swift */,
 				C7A094162943BC3500E78DC6 /* Tweet.swift */,
 				C7A0943E2943E00B00E78DC6 /* Timeline.swift */,
 			);
@@ -243,6 +292,14 @@
 				C7A094352943D6B300E78DC6 /* TimelineRequest.swift */,
 			);
 			path = Requests;
+			sourceTree = "<group>";
+		};
+		C7ACA41E29466AAB002E0C7D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C7ACA41F29466CEF002E0C7D /* TimelineViewModelTests.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7A094062943BA3000E78DC6 /* Preview Assets.xcassets in Resources */,
+				C7ACA41D294665D4002E0C7D /* Localizable.strings in Resources */,
 				C7A094032943BA3000E78DC6 /* Assets.xcassets in Resources */,
 				C7A094242943CEF300E78DC6 /* Timeline.json in Resources */,
 			);
@@ -349,18 +407,27 @@
 			files = (
 				C7A094152943BB3F00E78DC6 /* TweetDTO.swift in Sources */,
 				C7A0943F2943E00B00E78DC6 /* Timeline.swift in Sources */,
+				C774E69B2946068200DD25F3 /* Assets.swift in Sources */,
 				C7A0943B2943D8C200E78DC6 /* TimelineDTO.swift in Sources */,
 				C7A0941D2943CBF400E78DC6 /* APIClient.swift in Sources */,
+				C774E6932945EB2400DD25F3 /* Unwrap.swift in Sources */,
 				C7A094342943CF9300E78DC6 /* DateFormatter+Ext.swift in Sources */,
-				C7A094012943BA2E00E78DC6 /* ContentView.swift in Sources */,
+				C7A094012943BA2E00E78DC6 /* TimelineView.swift in Sources */,
+				C774E6962945ECC200DD25F3 /* TimelineViewModel.swift in Sources */,
+				C7ACA41B29464B2E002E0C7D /* TweetView.swift in Sources */,
+				C774E69D2946299500DD25F3 /* Domain+Fixtures.swift in Sources */,
 				C7A093FF2943BA2E00E78DC6 /* OneTweetApp.swift in Sources */,
 				C7A094412943E02800E78DC6 /* Domain+Ext.swift in Sources */,
+				C774E6982945ED7400DD25F3 /* FeedView.swift in Sources */,
 				C7848A7029453102007BAEDF /* TimelineRepository.swift in Sources */,
 				C7A094172943BC3500E78DC6 /* Tweet.swift in Sources */,
 				C7A094192943C9EE00E78DC6 /* DataRequest.swift in Sources */,
 				C7A0941F2943CCF400E78DC6 /* JsonDecoder.swift in Sources */,
 				C7A0941B2943CACF00E78DC6 /* APIError.swift in Sources */,
+				C774E69F29462F3800DD25F3 /* TweetButtons.swift in Sources */,
+				C774E6922945EB2400DD25F3 /* AvatarView.swift in Sources */,
 				C7A094362943D6B300E78DC6 /* TimelineRequest.swift in Sources */,
+				C774E6A129462F5B00DD25F3 /* Button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +437,7 @@
 			files = (
 				C7848A78294539C8007BAEDF /* TimelineRepositoryTests.swift in Sources */,
 				C7A0942D2943CF4600E78DC6 /* DateFormatterTests.swift in Sources */,
+				C7ACA42129466CFB002E0C7D /* TimelineViewModelTests.swift in Sources */,
 				C7848A7529453881007BAEDF /* MockAPIClient.swift in Sources */,
 				C7A094392943D82C00E78DC6 /* TimelineRequestTests.swift in Sources */,
 				C7848A7329453602007BAEDF /* MockTimelineRepository.swift in Sources */,
