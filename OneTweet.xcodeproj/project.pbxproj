@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7099EC9294753BB00788B48 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C7099EC8294753BB00788B48 /* README.md */; };
 		C774E6922945EB2400DD25F3 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C774E6902945EB2400DD25F3 /* AvatarView.swift */; };
 		C774E6932945EB2400DD25F3 /* Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C774E6912945EB2400DD25F3 /* Unwrap.swift */; };
 		C774E6962945ECC200DD25F3 /* TimelineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C774E6952945ECC200DD25F3 /* TimelineViewModel.swift */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C7099EC8294753BB00788B48 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		C774E6902945EB2400DD25F3 /* AvatarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		C774E6912945EB2400DD25F3 /* Unwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unwrap.swift; sourceTree = "<group>"; };
 		C774E6952945ECC200DD25F3 /* TimelineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewModel.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 		C7A093FD2943BA2E00E78DC6 /* OneTweet */ = {
 			isa = PBXGroup;
 			children = (
+				C7099EC8294753BB00788B48 /* README.md */,
 				C7A0940C2943BA3E00E78DC6 /* Application */,
 				C7A0940D2943BA4600E78DC6 /* APIClient */,
 				C7A0940F2943BA5D00E78DC6 /* Data */,
@@ -385,6 +388,7 @@
 			files = (
 				C7A094062943BA3000E78DC6 /* Preview Assets.xcassets in Resources */,
 				C7ACA41D294665D4002E0C7D /* Localizable.strings in Resources */,
+				C7099EC9294753BB00788B48 /* README.md in Resources */,
 				C7A094032943BA3000E78DC6 /* Assets.xcassets in Resources */,
 				C7A094242943CEF300E78DC6 /* Timeline.json in Resources */,
 			);
