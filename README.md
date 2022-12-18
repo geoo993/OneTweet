@@ -20,5 +20,5 @@ a tweet you are directed to a detail screen that shows the tweet and replies of 
 - Unit tests, there are unit tests for APIClient, Repository, DateFormatter, and ViewModel.
 - The UI/UX closely resembles Twitter current UI/UX.
 - For images, AsyncImage is used to fetch images with url
-- Using async/await to fetch times and @MainActor to return timeline in the main thread
+- Using async/await to fetch timeline tweets and @MainActor to return timeline in the main thread
 
