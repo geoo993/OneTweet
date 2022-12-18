@@ -7,7 +7,12 @@ final class MockTimelineRepository: TimelineRepositoryInterface {
         self.timeline = timeline
     }
 
-    func getTimeline() -> Result<Timeline, Error> {
-        timeline
+    func getTimeline() async throws -> Timeline {
+        switch timeline {
+        case let .success(value):
+            return value
+        case let .failure(error):
+            throw error
+        }
     }
 }

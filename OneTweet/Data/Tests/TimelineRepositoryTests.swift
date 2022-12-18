@@ -16,28 +16,21 @@ final class TimelineRepositoryTests: XCTestCase {
         super.tearDown()
     }
     
-    func testGetTimeline() {
+    func testGetTimeline() async throws {
         apiClient.executeCallback = {
             guard $0 is TimelineRequest else {
-                return .failure(.unknown)
+                throw APIError.unknown
             }
-            return .success(
-                APIClient.Timeline(
-                    tweets: [
+            return APIClient.Timeline(
+                tweets: [
                         .init(id: "sjjs", replyId: nil, name: "", author: "", content: "", avatar: nil, date: .init())
-                    ]
-                )
+                ]
             )
         }
         XCTAssertFalse(apiClient.executeCalled)
-        let result = repository.getTimeline()
-        switch result {
-        case let .success(value):
-            XCTAssertEqual(value.tweets.count, 1)
-            XCTAssertEqual(value.tweets.first?.id, "sjjs")
-        case let .failure(error):
-            XCTFail(error.localizedDescription)
-        }
+        let result = try await repository.getTimeline()
+        XCTAssertEqual(result.tweets.count, 1)
+        XCTAssertEqual(result.tweets.first?.id, "sjjs")
         XCTAssertTrue(apiClient.executeCalled)
     }
 }

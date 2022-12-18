@@ -1,7 +1,7 @@
 import Foundation
 
 protocol TimelineRepositoryInterface {
-    func getTimeline() -> Result<Timeline, Error>
+    func getTimeline() async throws -> Timeline
 }
 
 final class TimelineRepository: TimelineRepositoryInterface {
@@ -11,10 +11,8 @@ final class TimelineRepository: TimelineRepositoryInterface {
         self.apiClient = apiClient
     }
     
-    func getTimeline() -> Result<Timeline, Error> {
-        apiClient
-            .execute(request: TimelineRequest())
-            .map(Timeline.init)
-            .mapError { $0 }
+    func getTimeline() async throws -> Timeline {
+        let timeline = try await apiClient.execute(request: TimelineRequest())
+        return Timeline(model: timeline)
     }
 }

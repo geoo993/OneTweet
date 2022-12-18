@@ -14,6 +14,7 @@ public extension DateFormatter {
 }
 
 extension Date {
+    // TODO: could have used RelativeDateTimeFormatter
     public func timeAgoDisplay(from now: Date = Date()) -> String? {
         let calendar = Calendar.current
         guard

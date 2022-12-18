@@ -35,8 +35,8 @@ struct TimelineView: View {
                 }
             }
         }
-        .onAppear {
-            viewModel.getTweets()
+        .task {
+            await viewModel.getTweets()
         }
         .alert(
             Text("error_alert_title"),

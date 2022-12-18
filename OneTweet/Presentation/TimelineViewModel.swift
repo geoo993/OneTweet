@@ -1,5 +1,6 @@
 import Foundation
 
+@MainActor
 final class TimelineViewModel: ObservableObject {
     private let repository: TimelineRepositoryInterface
     
@@ -9,14 +10,13 @@ final class TimelineViewModel: ObservableObject {
     init(repository: TimelineRepositoryInterface = TimelineRepository()) {
         self.repository = repository
     }
-    
-    func getTweets() {
-        let results = repository.getTimeline().map(\.tweets)
-        switch results {
-        case let .success(values):
-            tweets = values
+
+    func getTweets() async {
+        do {
+            let timeline = try await repository.getTimeline()
+            tweets = timeline.tweets
             showErrorMessage = false
-        case .failure:
+        } catch {
             showErrorMessage = true
         }
     }

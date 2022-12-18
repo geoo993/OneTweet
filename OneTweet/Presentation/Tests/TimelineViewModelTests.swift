@@ -9,7 +9,7 @@ final class TimelineViewModelTests: XCTestCase {
         super.tearDown()
     }
     
-    func testGetTweetsSucceeds() {
+    func testGetTweetsSucceeds() async throws {
         let timeline: Timeline = .fixture(
             tweets: [
                 .fixture(content: .fixture(id: "73839")),
@@ -22,16 +22,16 @@ final class TimelineViewModelTests: XCTestCase {
         sut = TimelineViewModel(
             repository: MockTimelineRepository(timeline: .success(timeline))
         )
-        sut.getTweets()
+        await sut.getTweets()
         XCTAssertEqual(sut.tweets.count, 3)
         XCTAssertEqual(sut.tweets.last?.replies.count, 1)
     }
     
-    func testGetTweetsFails() {
+    func testGetTweetsFails() async throws {
         sut = TimelineViewModel(
             repository: MockTimelineRepository(timeline: .failure(APIError.unknown))
         )
-        sut.getTweets()
+        await sut.getTweets()
         XCTAssertEqual(sut.tweets.count, 0)
         XCTAssertTrue(sut.showErrorMessage)
     }
